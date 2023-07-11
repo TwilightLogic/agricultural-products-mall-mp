@@ -1,0 +1,42 @@
+<!--pages/category/category.wxml-->
+<navigation-bar></navigation-bar>
+
+<view class="category-page">
+	<view class="category-page-header">
+		<view class="category-page-header--left">
+			<p class="category-header--text">online shop</p>
+			<h3 class="category-header--tertiary">所有商品</h3>
+		</view>
+		<view class="category-page-header--right">
+			<image src="/static/images/search-outline.svg" class="category-page-header--icon" />
+			<input type="text" placeholder="荔枝..." class=category-page-header--input" />
+		</view>
+	</view>
+
+	<view class="category-box-swiper">
+		<scroll-view scroll-x="true">
+			<view class="nav">
+				<a href="#" class="item current">全部</a>
+				<a href="#" class="item">荔枝</a>
+				<a href="#" class="item">三华李</a>
+				<a href="#" class="item">百香果</a>
+				<a href="#" class="item">黄皮</a>
+				<a href="#" class="item">香蕉</a>
+				<a href="#" class="item">芭乐</a>
+				<a href="#" class="item">其他</a>
+				<a href="#" class="item">其他</a>
+				<a href="#" class="item">其他</a>
+			</view>
+		</scroll-view>
+	</view>
+
+	<view class="grid-container">
+		<view wx:for="{{commodities}}" wx:key="index" class="grid-container-item">
+			<image class="grid-container-item--image" src="{{item.image}}" />
+			<view class="grid-container-item-desc">
+				<h4 class="header-tertiary">{{item.name}}</h4>
+				<p class="item-desc--text">¥ <span>{{item.price}}</span></p>
+			</view>
+		</view>
+	</view>
+</view>

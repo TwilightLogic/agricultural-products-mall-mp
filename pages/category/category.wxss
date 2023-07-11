@@ -1,0 +1,129 @@
+/* pages/category/category.wxss */
+
+.category-page {
+  margin: 32rpx;
+}
+
+.category-page .category-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2rpx solid rgba(230, 126, 34, 0.15);
+}
+
+.category-page .category-page-header .category-page-header--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.category-page .category-page-header .category-page-header--right {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-page-header--icon {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  right: 8px;
+  transform: translate(-10%, -50%);
+  color: #999; /* 根据需要设置图标颜色 */
+}
+
+.category-page-header--input {
+  border: solid 2rpx rgb(153, 153, 153, 0.5);
+  border-radius: 56rpx;
+  max-width: 128rpx;
+  padding: 8rpx 58rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.category-page
+  .category-page-header
+  .category-page-header--left
+  .category-header--text {
+  font-size: 24rpx;
+  color: #666;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.9rpx;
+}
+
+.category-page .category-page-header .category-header--tertiary {
+  color: #170d03;
+  font-weight: 500;
+  font-size: 48rpx;
+  letter-spacing: -1rpx;
+}
+
+.category-page .category-box-swiper {
+  margin-top: 8rpx;
+}
+
+.category-page .category-box-swiper .nav {
+  display: flex;
+  justify-content: start;
+  width: 1400rpx;
+  gap: 64rpx;
+}
+
+.category-page .category-box-swiper .nav .item {
+  color: #170d03;
+  font-weight: 400;
+  font-size: 24rpx;
+  text-align: left;
+}
+
+.category-page .category-box-swiper .nav .item.current {
+  border-bottom: 4rpx solid #45260a;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 32rpx;
+  margin-top: 20rpx;
+  color: #170d03;
+}
+
+.grid-container .grid-container-item image {
+  width: 100%;
+  height: 320rpx;
+}
+
+.grid-container .grid-container-item .grid-container-item-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.grid-container
+  .grid-container-item
+  .grid-container-item-desc
+  .header-tertiary {
+  font-size: 28rpx;
+  font-weight: 400;
+}
+
+.grid-container
+  .grid-container-item
+  .grid-container-item-desc
+  .item-desc--text {
+  font-size: 24rpx;
+}
+
+.grid-container
+  .grid-container-item
+  .grid-container-item-desc
+  .item-desc--text
+  span {
+  font-weight: 600;
+}

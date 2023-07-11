@@ -1,0 +1,61 @@
+<!--pages/home/home.wxml-->
+<view class="page-box">
+  <view class="overview-box">
+    <view class="swiper-box">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}" />
+            <!-- <view class="swiper-item {{item}}"></view> -->
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="item-list-container">
+      <h2 class="header--second">Hello</h2>
+      <view class="register-container">
+        <p class="register-container--text">欢迎加入茂名xx会员</p>
+        <a href="#" class="register--cta">快速注册</a>
+      </view>
+      <view class="item-list">
+        <view class="item item--1">
+          <image src="/static/images/heart.svg" class="item--icon" />
+          <p class="item--name">近期热卖</p>
+        </view>
+        <view class="item item--2">
+          <image src="/static/images/paper-plane.svg" class="item--icon" />
+          <p class="item--name">今日新品</p>
+        </view>
+        <view class="item item--3">
+          <image src="/static/images/shopping-bag.svg" class="item--icon" />
+          <p class="item--name">所有商品</p>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="vip-box">
+    <view class="vip-box-description">
+      <h3 class="header--tertiary">我的会员 Member</h3>
+      <view class="points-container">
+        <p class="points-container--text">当前积分</p>
+        <p class="points-container--points"> <span> 0</span>分</p>
+      </view>
+    </view>
+    <image src="/static/images/vip.jpeg" />
+  </view>
+
+  <view class="ads-box">
+    <view class="ads-box-text">
+      <p class="tips">👇🏻 这里下面的轮播图可以是广告和宣传海报</p>
+    </view>
+    <view class="ads-swiper-container">
+      <swiper indicator-dots="{{indicatorDots_bottom}}" autoplay="{{autoplay}}" interval="{{interval_bottom}}" duration="{{duration}}">
+        <block wx:for="{{background_bottom}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>

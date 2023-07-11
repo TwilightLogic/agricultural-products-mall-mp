@@ -1,0 +1,171 @@
+/* pages/home/home.wxss */
+
+body {
+  background-color: #fdf2e9;
+}
+
+.overview-box {
+  position: relative;
+  margin-bottom: 268rpx;
+}
+
+.swiper-box swiper {
+  height: 820rpx;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-box swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.item-list-container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #fdf2e9;
+  padding: 32rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+  border-radius: 22rpx;
+  box-shadow: 0 24rpx 48rpx rgba(0, 0, 0, 0.15);
+}
+
+.item-list-container .header--second {
+  font-size: 36rpx;
+  color: #170d03;
+  display: inline-block;
+}
+
+.item-list-container .register-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 32rpx;
+}
+
+.item-list-container .register-container .register-container--text {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #170d03;
+}
+
+.item-list-container .register-container .register--cta {
+  padding: 16rpx 32rpx;
+  background-color: #e67e22;
+  color: #fdf2e9;
+  border-radius: 22rpx;
+  font-size: 24rpx;
+  font-weight: 500;
+}
+
+.item-list {
+  width: 640rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.item-list .item {
+  padding: 52rpx;
+  border-radius: 22rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-list .item.item--1 {
+  background-color: #e67e22;
+}
+
+.item-list .item.item--2 {
+  background-color: #c38154;
+}
+
+.item-list .item.item--3 {
+  background-color: #884a39;
+}
+
+.item-list .item--icon {
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.item-list .item .item--name {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #fdf2e9;
+}
+
+.vip-box {
+  display: flex;
+  gap: 16rpx;
+  padding: 32rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vip-box .vip-box-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vip-box .vip-box-description .header--tertiary {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 12rpx;
+}
+
+.vip-box .vip-box-description .points-container {
+  margin-top: 12rpx;
+  font-size: 28rpx;
+  color: #555;
+}
+
+.vip-box .vip-box-description .points-container .points-container--points span {
+  font-weight: 600;
+}
+
+.vip-box image {
+  width: 65%;
+  height: 192rpx;
+  border-radius: 22rpx;
+  box-shadow: 0 24rpx 48rpx rgba(0, 0, 0, 0.1);
+}
+
+.ads-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+  margin-bottom: 32rpx; 
+}
+
+.ads-box .ads-box-text .tips {
+  text-align: center;
+  display: block;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.ads-box .ads-swiper-container swiper {
+  height: 325rpx;
+  width: 91%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.ads-box .ads-swiper-container swiper image {
+  width: 100%;
+  height: 100%;
+  border-radius: 22rpx;
+}
