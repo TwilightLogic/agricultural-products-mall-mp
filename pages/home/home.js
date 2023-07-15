@@ -4,15 +4,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-    background: ["../../static/images/plants-with-wall.jpeg", "../../static/images/jellyfish.jpeg", "../../static/images/wine.jpeg"],
+    background: [
+      '../../static/images/plants-with-wall.jpeg',
+      '../../static/images/jellyfish.jpeg',
+      '../../static/images/wine.jpeg',
+    ],
     indicatorDots: false,
     vertical: false,
     autoplay: true,
     interval: 5000,
     duration: 500,
-    background_bottom: ["../../static/images/tulip-medium.jpeg", "../../static/images/brand-new-tulip.jpeg", "../../static/images/wall.jpeg"],
+    background_bottom: [
+      '../../static/images/tulip-medium.jpeg',
+      '../../static/images/brand-new-tulip.jpeg',
+      '../../static/images/wall.jpeg',
+    ],
     interval_bottom: 4000,
-    indicatorDots_bottom: true
+    indicatorDots_bottom: true,
+  },
+
+  gotoCategory() {
+    // wx.navigateTo({
+    //   url: '/pages/index/index?name=logic&ps=123',
+    // });
   },
 
   /**

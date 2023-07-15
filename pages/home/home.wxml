@@ -26,7 +26,7 @@
           <image src="/static/images/paper-plane.svg" class="item--icon" />
           <p class="item--name">今日新品</p>
         </view>
-        <view class="item item--3">
+        <view bindtap="gotoCategory" class="item item--3">
           <image src="/static/images/shopping-bag.svg" class="item--icon" />
           <p class="item--name">所有商品</p>
         </view>
