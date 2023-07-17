@@ -59,4 +59,7 @@ Page({
       },
     });
   },
+  onPullDownRefresh() {
+    wx.stopPullDownRefresh();
+  },
 });

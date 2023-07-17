@@ -3,5 +3,6 @@
     "navigation-bar": "/components/navigation-bar/navigation-bar"
   },
   "navigationBarTitleText": "分类",
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
 }
