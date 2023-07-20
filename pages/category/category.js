@@ -8,7 +8,8 @@ Page({
     this.getGoodsData();
   },
 
-  // TODO: 接口谁来写啊靠
+  // 这里后面再用我们自己的API ⬇️
+  // Tips: 现在暂时用的是别人的API
   getGoodsData() {
     var that = this;
     wx.request({
