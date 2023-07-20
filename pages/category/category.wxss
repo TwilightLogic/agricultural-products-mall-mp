@@ -85,6 +85,10 @@
 }
 
 .grid-container {
+  overflow: scroll;
+}
+
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);

@@ -1,64 +1,36 @@
 const app = getApp();
 Page({
   data: {
-    commodities: [
-      {
-        name: '埃塞尔比亚 挂耳咖啡',
-        price: 188,
-        image: '/static/images/orange-medium.jpeg',
-      },
-      {
-        name: '日晒瑰夏',
-        price: 288,
-        image: '/static/images/red-orange-medium.jpeg',
-      },
-      {
-        name: '日晒瑰夏',
-        price: 288,
-        image: '/static/images/red-orange-medium.jpeg',
-      },
-      {
-        name: '埃塞尔比亚 挂耳咖啡',
-        price: 188,
-        image: '/static/images/orange-medium.jpeg',
-      },
-      {
-        name: '埃塞尔比亚 挂耳咖啡',
-        price: 188,
-        image: '/static/images/orange-medium.jpeg',
-      },
-      {
-        name: '埃塞尔比亚 挂耳咖啡',
-        price: 188,
-        image: '/static/images/orange-medium.jpeg',
-      },
-    ],
-    pageNo: 1,
-    pageSize: 10,
+    goodsData: [],
   },
-  onReachBottom() {
-    this.data.pageNo + 1;
-    this.getGoodsData();
-  },
+  // 页面加载时就调用
   onLoad() {
     this.getGoodsData();
   },
+
   // TODO: 接口谁来写啊靠
   getGoodsData() {
+    var that = this;
     wx.request({
       url: 'https://ys.lumingx.com/api/manage/GoodsList',
       data: {
-        pageNo: this.data.pageNo,
-        pageSize: this.data.pageSize,
+        pageNo: 5,
+        pageSize: 10,
       },
       header: {
         'content-type': 'application/json',
       },
       success(res) {
-        console.log(res.data.data);
+        console.log(res.data);
+        if (res.data.success && res.data.data.length > 0) {
+          that.setData({
+            goodsData: res.data.data,
+          });
+        }
       },
     });
   },
+
   onPullDownRefresh() {
     wx.stopPullDownRefresh();
   },

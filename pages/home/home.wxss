@@ -147,7 +147,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20rpx;
-  margin-bottom: 32rpx; 
+  margin-bottom: 32rpx;
 }
 
 .ads-box .ads-box-text .tips {

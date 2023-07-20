@@ -30,12 +30,14 @@
 		</scroll-view>
 	</view>
 
+	<!-- 这里后面再用后端的API ⬇️ -->
+	<!-- Tips: 这里用的是别人的API -->
 	<view class="grid-container">
-		<view wx:for="{{commodities}}" wx:key="index" class="grid-container-item">
-			<image class="grid-container-item--image" src="{{item.image}}" />
+		<view wx:for="{{goodsData}}" wx:key="index" class="grid-container-item">
+			<image class="grid-container-item--image" src="{{item.GoodsImage}}" />
 			<view class="grid-container-item-desc">
-				<h4 class="header-tertiary">{{item.name}}</h4>
-				<p class="item-desc--text">¥ <span>{{item.price}}</span></p>
+				<h4 class="header-tertiary">{{item.Title}}</h4>
+				<p class="item-desc--text">¥ <span>{{item.Id}}</span></p>
 			</view>
 		</view>
 	</view>
