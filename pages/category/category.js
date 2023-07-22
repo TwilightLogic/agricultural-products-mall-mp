@@ -2,6 +2,8 @@ const app = getApp();
 Page({
   data: {
     goodsData: [],
+    pageNo: 1,
+    pageSize: 10,
   },
   // 页面加载时就调用
   onLoad() {
@@ -15,8 +17,8 @@ Page({
     wx.request({
       url: 'https://ys.lumingx.com/api/manage/GoodsList',
       data: {
-        pageNo: 5,
-        pageSize: 10,
+        pageNo: that.data.pageNo,
+        pageSize: that.data.pageSize,
       },
       header: {
         'content-type': 'application/json',
@@ -24,15 +26,24 @@ Page({
       success(res) {
         console.log(res.data);
         if (res.data.success && res.data.data.length > 0) {
+          // 这里做了个页面的拼接
+          let newData = that.data.goodsData.concat(res.data.data);
           that.setData({
-            goodsData: res.data.data,
+            goodsData: newData,
           });
         }
       },
     });
   },
 
+  // 下拉刷新
   onPullDownRefresh() {
     wx.stopPullDownRefresh();
+  },
+
+  // 上拉触底
+  onReachBottom() {
+    this.data.pageNo++;
+    this.getGoodsData();
   },
 });
