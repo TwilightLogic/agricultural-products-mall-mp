@@ -4,6 +4,7 @@ Page({
     goodsData: [],
     pageNo: 1,
     pageSize: 10,
+    isComplete: false,
   },
   // 页面加载时就调用
   onLoad() {
@@ -24,13 +25,15 @@ Page({
         'content-type': 'application/json',
       },
       success(res) {
-        console.log(res.data);
+        // 当API的pageNo还有值的时候（因为pageNo会自增完）：
         if (res.data.success && res.data.data.length > 0) {
           // 这里做了个页面的拼接
           let newData = that.data.goodsData.concat(res.data.data);
           that.setData({
             goodsData: newData,
           });
+        } else {
+          that.setData({ isComplete: true });
         }
       },
     });

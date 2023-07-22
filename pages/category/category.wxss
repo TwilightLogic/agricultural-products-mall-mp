@@ -131,3 +131,15 @@
   span {
   font-weight: 600;
 }
+
+.tips-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tips-container .tips-container--tips {
+  padding: 16rpx;
+  font-size: 36rpx;
+  color: #999;
+}

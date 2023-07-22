@@ -42,3 +42,7 @@
 		</view>
 	</view>
 </view>
+
+<view wx:if="{{isComplete}}" class="tips-container">
+	<h4 class="tips-container--tips">已经没有更多啦！</h4>
+</view>
