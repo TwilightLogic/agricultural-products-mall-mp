@@ -33,7 +33,7 @@
 	<!-- 这里后面再用后端的API ⬇️ -->
 	<!-- Tips: 这里用的是别人的API -->
 	<view class="grid-container">
-		<view wx:for="{{goodsData}}" wx:key="index" class="grid-container-item">
+		<view wx:for="{{goodsData}}" wx:key="index" class="grid-container-item" bindtap="jumpToDetail">
 			<image class="grid-container-item--image" src="{{item.GoodsImage}}" />
 			<view class="grid-container-item-desc">
 				<h4 class="header-tertiary">{{item.Title}}</h4>

@@ -14,7 +14,10 @@ Page({
   // 这里后面再用我们自己的API ⬇️
   // Tips: 现在暂时用的是别人的API
   getGoodsData() {
-    var that = this;
+    let that = this;
+    wx.showLoading({
+      title: '加载中...',
+    });
     wx.request({
       url: 'https://ys.lumingx.com/api/manage/GoodsList',
       data: {
@@ -25,9 +28,10 @@ Page({
         'content-type': 'application/json',
       },
       success(res) {
-        // 当请求成功时，关闭上拉刷新页面的loading动画
+        // 当请求成功时，关闭上拉刷新页面的loading动画，停止刷新，还有关闭这个loading动画
         wx.hideNavigationBarLoading();
         wx.stopPullDownRefresh();
+        wx.hideLoading();
         // 当API的pageNo还有值的时候（因为pageNo会自增完）：
         if (res.data.success && res.data.data.length > 0) {
           // 这里做了个页面的拼接
