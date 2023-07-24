@@ -62,4 +62,19 @@ Page({
     this.data.pageNo++;
     this.getGoodsData();
   },
+
+  // 点击跳转到商品详情页
+  jumpToDetail(e) {
+    // 获取当前商品的数据(id)
+    // 跳转到商品详情页
+    // 将商品的id传给商品详情页
+    console.log(e);
+
+    let goodsNo = e.currentTarget.dataset.goodsid;
+    console.log(goodsNo);
+
+    wx.navigateTo({
+      url: '/pages/detail/detail?goodsNo=' + goodsNo,
+    });
+  },
 });
