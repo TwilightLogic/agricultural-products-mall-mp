@@ -25,6 +25,9 @@ Page({
         'content-type': 'application/json',
       },
       success(res) {
+        // 当请求成功时，关闭上拉刷新页面的loading动画
+        wx.hideNavigationBarLoading();
+        wx.stopPullDownRefresh();
         // 当API的pageNo还有值的时候（因为pageNo会自增完）：
         if (res.data.success && res.data.data.length > 0) {
           // 这里做了个页面的拼接
@@ -41,7 +44,13 @@ Page({
 
   // 下拉刷新
   onPullDownRefresh() {
-    wx.stopPullDownRefresh();
+    wx.showNavigationBarLoading();
+    // 重置页数为1
+    this.data.pageNo = 1;
+    // 清除原来的商品数据
+    this.data.goodsData = [];
+    // 再get一次商品列表咯
+    this.getGoodsData();
   },
 
   // 上拉触底
