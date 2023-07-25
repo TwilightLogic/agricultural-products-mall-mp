@@ -26,3 +26,37 @@
 .swiper-box .swiper-box-tips text {
   color: #fff;
 }
+
+.goods-info-box {
+  padding: 32rpx;
+}
+
+.goods-info-box .price {
+  color: #e67e22;
+  font-weight: 700;
+  font-size: 36rpx;
+}
+
+.goods-info-box .share-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20rpx;
+}
+
+.goods-info-box .share-box .title {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.goods-info-box .share-box .share {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  width: 100rpx;
+}
+
+.goods-info-box .share-box .icon-share {
+  font-size: 48rpx;
+  font-weight: normal;
+}

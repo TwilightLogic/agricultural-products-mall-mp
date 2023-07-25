@@ -16,7 +16,16 @@
 	</view>
 
 	<!-- 商品信息 -->
-	<view class="goods-info-box"></view>
+	<view class="goods-info-box">
+		<view class="share-box">
+			<view class="title">「荔枝｜桂味」</view>
+			<button open-type="share" class="share">
+				<view class="iconfont icon-share"></view>
+			</button>
+		</view>
+		<view class="price">¥ 99.9</view>
+
+	</view>
 
 	<!-- 地址 -->
 	<view class="address-box"></view>
