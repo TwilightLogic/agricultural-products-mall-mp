@@ -7,4 +7,45 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+/* 阿里的图标 ⬇️ */
+@font-face {
+  font-family: 'iconfont'; /* Project id 4182629 */
+  src: url('//at.alicdn.com/t/c/font_4182629_phxkirdst9m.woff2?t=1690271972772')
+      format('woff2'),
+    url('//at.alicdn.com/t/c/font_4182629_phxkirdst9m.woff?t=1690271972772')
+      format('woff'),
+    url('//at.alicdn.com/t/c/font_4182629_phxkirdst9m.ttf?t=1690271972772')
+      format('truetype'),
+    url('//at.alicdn.com/t/c/font_4182629_phxkirdst9m.svg?t=1690271972772#iconfont')
+      format('svg');
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: '\e600';
+}
+
+.icon-gouwuche:before {
+  content: '\e73d';
+}
+
+.icon-share:before {
+  content: '\e61e';
+}
+
+.icon-location:before {
+  content: '\e790';
+}
+
+.icon-wechat:before {
+  content: '\e60e';
+}
