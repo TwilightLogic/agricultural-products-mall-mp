@@ -3,5 +3,6 @@
     "navigation-bar": "/components/navigation-bar/navigation-bar"
   },
   "navigationBarTitleText": "详情页面",
-  "backgroundTextStyle": "dark"
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#e67e22"
 }
