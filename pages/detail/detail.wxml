@@ -60,8 +60,8 @@
 
 		<!-- CTA -->
 		<view class="cta-container">
-			<view class="btn-cart">加入购物车</view>
-			<view class="btn-buy">立即购买</view>
+			<view class="btn-cart" bindtap="addToCart">加入购物车</view>
+			<view class="btn-buy" bindtap="btnBuy">立即购买</view>
 		</view>
 	</view>
 </view>
