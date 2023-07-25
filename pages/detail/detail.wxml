@@ -23,7 +23,7 @@
 				<view class="iconfont icon-share"></view>
 			</button>
 		</view>
-		<view class="price">¥ 99.9/斤</view>
+		<view class="price">¥ {{detailInfo.SaleAmount}}/斤</view>
 
 	</view>
 
@@ -36,9 +36,9 @@
 	<!-- 商品详情 -->
 	<view class="details-box">
 		<view class="details-box-title">—— 商品详情 ——</view>
-		<image src="/static/images/jellyfish.jpeg" mode="widthFix" />
-		<image src="/static/images/orange-medium.jpeg" mode="widthFix" />
-		<image src="/static/images/flower-medium.jpeg" mode="widthFix" />
+		<block wx:for="{{detailInfo.DetailImages}}" wx:key="*this">
+			<image src="{{item}}" mode="widthFix" />
+		</block>
 	</view>
 
 	<!-- 底部导航栏 -->

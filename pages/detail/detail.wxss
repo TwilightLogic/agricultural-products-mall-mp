@@ -91,6 +91,7 @@
 
 .details-box image {
   width: 100%;
+  display: block;
 }
 
 .bottom-nav {

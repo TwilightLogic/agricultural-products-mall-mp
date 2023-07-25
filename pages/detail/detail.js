@@ -6,12 +6,17 @@ Page({
   data: {
     detailInfo: {
       Id: 1,
-      goodsImage: '/static/images/biscuit-medium.jpeg',
-      SaleAmount: 88.88,
+      GoodsImage: '/static/images/biscuit-medium.jpeg',
+      SaleAmount: 88.8,
       SwiperImages: [
         '/static/images/brand-new-tulip.jpeg',
         '/static/images/flower-medium.jpeg',
         '/static/images/plants-with-wall.jpeg',
+      ],
+      DetailImages: [
+        '/static/images/jellyfish.jpeg',
+        '/static/images/orange-medium.jpeg',
+        '/static/images/flower-medium.jpeg',
       ],
     },
     indicatorDots: true,
@@ -41,7 +46,7 @@ Page({
   showImage() {
     wx.previewImage({
       current: this.data.detailInfo.SwiperImages[this.data.current],
-      // TODO: 这里之后要换成https的url，因为本地资源不能加载 ⬇️
+      // TODO: 这里之后要换成http的url，因为本地资源不能加载 ⬇️
       urls: this.data.detailInfo.SwiperImages,
     });
   },
