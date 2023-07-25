@@ -80,7 +80,6 @@
 }
 
 .details-box {
-  margin-top: 32rpx;
   padding: 32rpx;
 }
 
