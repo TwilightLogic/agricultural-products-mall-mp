@@ -37,6 +37,15 @@ Page({
     });
   },
 
+  // 图片全屏预览功能
+  showImage() {
+    wx.previewImage({
+      current: this.data.detailInfo.SwiperImages[this.data.current],
+      // TODO: 这里之后要换成https的url，因为本地资源不能加载 ⬇️
+      urls: this.data.detailInfo.SwiperImages,
+    });
+  },
+
   // 回到首页
   jumpToHome() {
     wx.switchTab({

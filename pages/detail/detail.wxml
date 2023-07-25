@@ -5,7 +5,7 @@
 		<swiper bindchange="swiperChange" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
 			<block wx:for="{{detailInfo.SwiperImages}}" wx:key="*this">
 				<swiper-item>
-					<image src="{{item}}"></image>
+					<image src="{{item}}" bindtap="showImage"></image>
 				</swiper-item>
 			</block>
 		</swiper>
