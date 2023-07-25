@@ -1,1 +1,28 @@
 /* pages/detail/detail.wxss */
+
+.swiper-box {
+  position: relative;
+}
+
+.swiper-box swiper {
+  height: 750rpx;
+}
+
+.swiper-box swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-box .swiper-box-tips {
+  position: absolute;
+  right: 40rpx;
+  bottom: 40rpx;
+  background: #333;
+  opacity: 0.6;
+  padding: 0 16rpx;
+  border-radius: 22rpx;
+}
+
+.swiper-box .swiper-box-tips text {
+  color: #fff;
+}

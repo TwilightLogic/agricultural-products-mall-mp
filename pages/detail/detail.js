@@ -3,13 +3,38 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {},
+  data: {
+    detailInfo: {
+      Id: 1,
+      goodsImage: '/static/images/biscuit-medium.jpeg',
+      SaleAmount: 88.88,
+      SwiperImages: [
+        '/static/images/brand-new-tulip.jpeg',
+        '/static/images/flower-medium.jpeg',
+        '/static/images/plants-with-wall.jpeg',
+      ],
+    },
+    indicatorDots: true,
+    vertical: false,
+    autoplay: true,
+    interval: 2000,
+    duration: 500,
+    current: 0,
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
     console.log(options);
+  },
+
+  // 幻灯片切换时的事件
+  swiperChange(e) {
+    let curNum = e.detail.current;
+    this.setData({
+      current: curNum,
+    });
   },
 
   /**
