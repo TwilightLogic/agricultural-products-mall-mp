@@ -78,3 +78,18 @@
 .address-box .address-box--title {
   color: #333;
 }
+
+.details-box {
+  margin-top: 32rpx;
+  padding: 32rpx;
+}
+
+.details-box .details-box-title {
+  color: #999;
+  text-align: center;
+  margin-bottom: 16rpx;
+}
+
+.details-box image {
+  width: 100%;
+}

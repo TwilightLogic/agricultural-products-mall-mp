@@ -34,7 +34,12 @@
 	</view>
 
 	<!-- 商品详情 -->
-	<view class="details-box"></view>
+	<view class="details-box">
+		<view class="details-box-title">—— 商品详情 ——</view>
+		<image src="/static/images/jellyfish.jpeg" mode="widthFix" />
+		<image src="/static/images/orange-medium.jpeg" mode="widthFix" />
+		<image src="/static/images/flower-medium.jpeg" mode="widthFix" />
+	</view>
 
 	<!-- 底部导航栏 -->
 	<view class="bottom-nav"></view>
