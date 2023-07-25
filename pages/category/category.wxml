@@ -1,5 +1,5 @@
 <!--pages/category/category.wxml-->
-<navigation-bar></navigation-bar>
+<!-- <navigation-bar></navigation-bar> -->
 
 <view class="category-page">
 	<view class="category-page-header">

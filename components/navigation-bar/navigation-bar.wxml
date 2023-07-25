@@ -1,6 +1,5 @@
 <!-- 自定义顶部栏 -->
-<view class="nav-bar" style="height:{{navBarHeight}}px;">
-</view>
+<view class="nav-bar" style="height:{{navBarHeight}}px;"></view>
 
 <!-- 占位，高度与顶部栏一样 -->
 <view style="height:{{navBarHeight}}px;"></view>

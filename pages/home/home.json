@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "茂名"
+  "navigationBarTitleText": "茂名",
+  "navigationStyle": "custom"
 }

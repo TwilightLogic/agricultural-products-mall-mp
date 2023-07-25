@@ -1,2 +1,3 @@
-<!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<navigation-bar></navigation-bar>
+
+hi
