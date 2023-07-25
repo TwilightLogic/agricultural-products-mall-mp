@@ -23,12 +23,15 @@
 				<view class="iconfont icon-share"></view>
 			</button>
 		</view>
-		<view class="price">¥ 99.9</view>
+		<view class="price">¥ 99.9/斤</view>
 
 	</view>
 
-	<!-- 地址 -->
-	<view class="address-box"></view>
+	<!-- 发货地址 -->
+	<view class="address-box">
+		<view class="iconfont icon-location"></view>
+		<view class="address-box--title">发货地址：广东省茂名市高州市</view>
+	</view>
 
 	<!-- 商品详情 -->
 	<view class="details-box"></view>
