@@ -44,15 +44,15 @@
 	<!-- 底部导航栏 -->
 	<view class="bottom-nav">
 		<view class="icon-container">
-			<view class="icon-box">
+			<view class="icon-box" bindtap="jumpToHome">
 				<view class="iconfont icon-home"></view>
 				<view class="icon-text">首页</view>
 			</view>
-			<view class="icon-box">
+			<view class="icon-box" bindtap="callService">
 				<view class="iconfont icon-wechat"></view>
 				<view class="icon-text">客服</view>
 			</view>
-			<view class="icon-box">
+			<view class="icon-box" bindtap="jumpToCart">
 				<view class="iconfont icon-gouwuche"></view>
 				<view class="icon-text">购物车</view>
 			</view>

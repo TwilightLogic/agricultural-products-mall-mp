@@ -37,6 +37,27 @@ Page({
     });
   },
 
+  // 回到首页
+  jumpToHome() {
+    wx.switchTab({
+      url: '/pages/home/home',
+    });
+  },
+
+  // 客服
+  callService() {
+    wx.makePhoneCall({
+      phoneNumber: '13727779966',
+    });
+  },
+
+  // 跳转到购物车
+  jumpToCart() {
+    wx.switchTab({
+      url: '/pages/shopcart/shopcart',
+    });
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
