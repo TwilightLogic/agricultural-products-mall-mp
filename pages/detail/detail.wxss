@@ -80,7 +80,7 @@
 }
 
 .details-box {
-  padding: 32rpx;
+  padding: 32rpx 32rpx 128rpx 32rpx;
 }
 
 .details-box .details-box-title {
@@ -100,7 +100,7 @@
   bottom: 0;
   right: 0;
   background: #fff;
-  height: 12%;
+  height: 128rpx;
   opacity: 0.9;
   align-items: center;
   gap: 32rpx;

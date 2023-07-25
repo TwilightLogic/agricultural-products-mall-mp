@@ -4,6 +4,6 @@
   },
   "navigationBarTitleText": "分类",
   "enablePullDownRefresh": true,
-  "backgroundTextStyle": "dark",
+  "backgroundTextStyle": "light",
   "navigationBarBackgroundColor": "#e67e22"
 }
